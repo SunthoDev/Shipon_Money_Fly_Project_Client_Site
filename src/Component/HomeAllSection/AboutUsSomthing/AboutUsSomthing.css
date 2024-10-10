@@ -1,0 +1,24 @@
+.AboutUsSomethingParent {}
+
+.AboutUsSomethingParent .AboutUsSomething {}
+
+.AboutUsSomethingParent .AboutUsSomething .Right {}
+
+.AboutUsSomethingParent .AboutUsSomething .Right h2 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 130%;
+    color: rgb(35, 40, 54);
+    margin: 0;
+}
+
+.AboutUsSomethingParent .AboutUsSomething .Right p {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(35, 40, 54);
+    text-align: justify;
+    padding-top: 24px;
+}

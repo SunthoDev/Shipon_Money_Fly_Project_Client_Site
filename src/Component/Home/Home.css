@@ -1,0 +1,99 @@
+.HomeParent {
+    width: 100%;
+    background-color: #F7F8FC;
+}
+
+.HomeParent {
+
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+@media (max-width: 768px) {
+    .HomeParent .Bounas {
+        width: 100%;
+    }
+}
+
+
+/* ===================Optional */
+
+.HomeParent .CoinNumber {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+.HomeParent .AllButtonSection {
+    position: fixed;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.HomeParent h2 {
+    color: black;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-left: 18px;
+}
+.HomeParent .ParsentiseButton {
+    color: #3CCC70;
+    border: 2px solid #3CCC70;
+    padding: 0px 8px;
+    margin-left: 8px;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+
+/* ============================================= */
+
+.explosion {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    pointer-events: none;
+}
+.explosion .particle {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    animation: pop 0.8s reverse forwards;
+}
+#coin .counter {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+    opacity: .7;
+}
+#coin {
+    position: relative;
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+.svg {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    width: 30px;
+}

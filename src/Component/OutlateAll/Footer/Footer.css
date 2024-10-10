@@ -1,0 +1,53 @@
+.ParentFooter {
+
+    /* background-image: url(../../../assets/Footer/footer.png); */
+    /* background-color: #38B6FF; */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: #393f43;
+}
+
+.ParentFooter .SocialIcon {
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 44px;
+    font-size: 22px;
+    color: white;
+    transition: .2s;
+
+}
+
+.ParentFooter .SocialIcon:hover {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.ParentFooter .fac {
+    background-color: #3B5998;
+
+}
+
+.ParentFooter .you {
+
+    background-color: #bb0000;
+}
+
+.ParentFooter .twi {
+
+    background-color: #55ACEE;
+}
+
+.ParentFooter .ins {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.ParentFooter .pin {
+    background-color: #cb2027;
+
+}

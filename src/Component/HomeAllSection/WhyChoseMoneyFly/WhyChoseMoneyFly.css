@@ -1,0 +1,50 @@
+.WhyChoseMoneyFlyParent {}
+
+.WhyChoseMoneyFlyParent h2 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 130%;
+    color: rgb(35, 40, 54);
+    text-align: center;
+}
+
+.WhyChoseMoneyFlyParent h4 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(35, 40, 54);
+    text-align: center;
+    padding-top: 8px;
+}
+
+.WhyChoseMoneyFlyParent .WhyChoseMoneyFly {
+    margin-top: 34px;
+}
+
+.WhyChoseMoneyFlyParent .WhyChoseMoneyFly .Item {}
+
+.WhyChoseMoneyFlyParent .WhyChoseMoneyFly .Item img {
+    margin: 0 auto;
+}
+
+.WhyChoseMoneyFlyParent .WhyChoseMoneyFly .Item h3 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 130%;
+    color: rgb(35, 40, 54);
+    margin: 0px;
+    text-align: center;
+}
+
+.WhyChoseMoneyFlyParent .WhyChoseMoneyFly .Item p {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(35, 40, 54);
+    text-align: center;
+    padding-top: 14px;
+}

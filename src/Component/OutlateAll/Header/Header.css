@@ -1,0 +1,190 @@
+.NavHeading {
+    padding: 10px 0;
+}
+
+.NavHeading h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    color: rgb(249, 251, 253);
+}
+.NavHeading button {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    background-color: rgb(253, 217, 75);
+    color: rgb(35, 40, 54);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 10px;
+    margin-left: 28px;
+    border-radius: 4px;
+    transition: .4s;
+}
+.NavHeading button:hover{
+    background-color: #EA9F00;
+}
+
+
+
+
+
+/* =================================================== */
+
+
+
+.navParent {
+    /* background-color: #202f4e; */
+    /* border-bottom: 2px solid #1b2841; */
+    background-color: rgb(249, 251, 253);
+}
+
+.navbar .NaveMenu a {
+    color: black;
+    margin: 0 6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    transition: .4s ;
+}
+.navbar .NaveMenu a:hover {
+    color: brown;
+    border: none;
+}
+
+
+
+
+
+
+.navbar .NaveMenu .Drop {
+    position: relative;
+    transition: .5s;
+}
+
+.navbar .NaveMenu .Drop .dropdown {
+    position: absolute;
+    width: 230px;
+    top: 32px;
+    left: 0px;
+    background-color: rgb(249, 251, 253);
+    border-radius: 4px;
+    visibility: hidden;
+    border: 2px solid  #202f4e ;
+    transition: .4s;
+    transform: scale(0);
+    transform-origin: top;
+}
+.navbar .NaveMenu .Drop:hover .dropdown {
+    visibility: visible;
+    left: 0px;
+    transform: scale(1);
+}
+
+
+.navbar .NaveMenu .Drop .dropdown li {
+    color: white;
+    transition: 1s;
+    padding: 10px 16px;
+    border-bottom: 1px solid #202f4e;
+}
+.navbar .NaveMenu .Drop .dropdown li:hover {
+    background-color: #fcd94a;
+    border-bottom: 1px solid transparent;
+}
+
+
+.navbar .NaveMenu .Drop .dropdown li:last-child {
+    border-top: none;
+}
+
+
+.navbar .NaveMenu .Drop .dropdown li:hover a {
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+
+.py-11 {
+    padding-top: .75rem !important;
+    padding-bottom: 0rem !important;
+}
+
+
+
+
+/* ======================================= */
+/* SingUp */
+/* ======================================= */
+
+.navbar .Login {
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid  rgb(1, 113, 211);
+    color: black;
+    transition: 0.3s;
+    font-size: 16px;
+    padding: 6px 12px;
+    transition: .4s;
+}
+
+.navbar .Login:hover {
+    border: 1px solid  rgb(1, 113, 211);
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 113, 211);
+}
+
+
+.navbar .SingUp {
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(1, 113, 211);
+    border: 1px solid  rgb(1, 113, 211);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-size: 16px;
+    margin-left: 18px;
+    padding: 6px 12px;
+}
+
+.navbar .SingUp:hover {
+    border: 1px solid  rgb(1, 113, 211);
+    background-color: transparent;
+    color: black;
+}
+
+
+.navbar .UserDashboard , .navbar .AdminDashboard {
+
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(1, 113, 211);
+    border: 1px solid  rgb(1, 113, 211);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-size: 16px;
+    margin-left: 18px;
+    padding: 6px 12px;
+
+}
+ 
+.navbar .UserDashboard:hover , .navbar .AdminDashboard:hover {
+    border: 1px solid  rgb(1, 113, 211);
+    background-color: transparent;
+    color: black;
+}
+
+
+
+
+
+
+
+
+

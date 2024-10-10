@@ -1,0 +1,70 @@
+
+.CheckOurCommunityParent{}
+
+.CheckOurCommunityParent h2{
+        font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 130%;
+        color: rgb(35, 40, 54);
+        text-align: center;
+}
+
+.CheckOurCommunityParent .Title {
+    margin-top: 14px;
+}
+
+.CheckOurCommunityParent .Title h4 {
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* ============================== */
+
+.CheckOurCommunityParent .CheckOurCommunity .SliderParent{}
+
+
+.CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem {
+    background-color: white;
+    padding: 14px 14px;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+
+.CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem p{
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: rgb(35, 40, 54);
+        text-align: justify;
+    }
+    
+    
+    .CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem .Review{
+        
+    }
+    .CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem .Review .img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: aqua;
+        overflow: hidden;
+    }
+    
+    .CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem .Review .Start{}
+    
+    .CheckOurCommunityParent .CheckOurCommunity .SliderParent .TestoItem .Review .Start h4{
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom:4px;
+    }
+    
+/* ============================== */
+
+
+

@@ -1,0 +1,29 @@
+
+
+.FrequentlyAskedQuestionsParent {}
+
+.FrequentlyAskedQuestionsParent h2 {
+        font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 130%;
+        color: rgb(35, 40, 54);
+        text-align: center;
+}
+
+.FrequentlyAskedQuestionsParent .FrequentlyAskedQuestions {}
+
+.FrequentlyAskedQuestionsParent .FrequentlyAskedQuestions .Item{
+    background-color: transparent;
+    border: 1px solid black;
+    margin-top: 34px;
+    transition: .2s;
+}
+
+.FrequentlyAskedQuestionsParent .FrequentlyAskedQuestions .Item:hover{
+    background-color: #F0F9FF;
+}
+
+
+
+
