@@ -1,31 +1,88 @@
 
 .LoginParent {
-
+    background-color: #F0F9FF;
 }
 .LoginParent .LogIn {
-    background-color: rgb(255,255,255,.1);
+   
+}
+
+/* ======================= */
+/* Left side css all */
+/* ======================= */
+
+.LoginParent .LogIn .MaineCard .Left {
+
+}
+
+.LoginParent .LogIn .MaineCard .Left h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom:14px;
+}
+
+.LoginParent .LogIn .MaineCard .Left {
+    padding: 54px 14px;
+}
+
+.LoginParent .LogIn .MaineCard .Left .Prefer  {
+    margin-top:24px;
+}
+
+.LoginParent .LogIn .MaineCard .Left .Prefer h4 {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.LoginParent .LogIn .MaineCard .Left .Prefer p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+/* ======================= */
+/* Right side css all */
+/* ======================= */
+
+.LoginParent .LogIn .MaineCard .Right {
+    background-color: #F9FBFD;
+    background-color: rgb(255, 255, 255, .1);
     backdrop-filter: blur(50px);
-    border: 2px solid rgb(255,255,255,.2);
-    box-shadow: 0 0 10px rgb(0,0,0,.2);
+    border: 2px solid rgb(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
 }
-.LoginParent{
-
-    background-image: url("../../../assets/AllImage/Login.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
+.LoginParent .LogIn .MaineCard .Right h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 18px;
+    text-align: center;
+    background-color: #0171D3;
+    color: white;
 }
 
-.LoginParent .LogIn .MaineCard .Right{
+.LoginParent .LogIn .MaineCard .Right .Register {
+
+    background-color: #0171D3 !important;
 
 }
-.LoginParent .LogIn .MaineCard .Right .FromData {
 
-}
+
+
+
+
+
+
+
+
+.LoginParent .LogIn .MaineCard .Right .FromData {}
+
+
 .LoginParent .LogIn .MaineCard .Right .FromData input {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .LoginParent .LogIn .MaineCard .Right .FromData .Register {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-family: sans-serif;
@@ -58,7 +115,9 @@
 
 
 
-
+/* ================================= */
+/* Alert Change Password */
+/* ================================= */
 
 .alertContainerLogin {
     position: absolute;
@@ -88,7 +147,7 @@
 }
 
 
-.alertContainerLogin .poup .popInfo  input {
+.alertContainerLogin .poup .popInfo input {
     width: 100%;
     margin-top: 22px;
     color: black;
@@ -99,7 +158,7 @@
     border-radius: 6px;
 }
 
-.alertContainerLogin .poup .popInfo  h6 {
+.alertContainerLogin .poup .popInfo h6 {
     color: #22afa3;
     font-size: 20px;
     font-weight: 500;
@@ -108,7 +167,7 @@
 
 
 
-.alertContainerLogin .poup .popInfo  .UpdateButton {
+.alertContainerLogin .poup .popInfo .UpdateButton {
     color: white;
     font-size: 20px;
     font-weight: 600;

@@ -4,52 +4,42 @@ import { Link, NavLink, Outlet } from 'react-router-dom';
 import { FaWallet, FaShoppingCart, FaCalendarAlt, FaHome, FaHeadSideVirus } from 'react-icons/fa';
 import { AuthContext } from '../../AuthoncationAll/AuthProvider/AuthProvider';
 import USERDashboardHeader from '../USERDashboardHeader/USERDashboardHeader';
+import Logo from "../../../assets/logo/DashboardLeftLogo.png"
 
 const USERDashboard = () => {
 
-    
+
     let { user, logOutUser } = useContext(AuthContext)
 
 
 
     return (
-        <div className="drawer md:drawer-open  bg-[#F6F6F6]">
+        <div className="drawer md:drawer-open  bg-[#F9FBFD]">
             <input id="my-drawer-2" type="checkbox" className="drawer-toggle " />
-            <div className="drawer-content flex flex-col ">
-
-                {/* jahatu page content nicha thi oupore outlate deta hova  */}
-
-                {/* ===================================== */}
-                {/* Dashboard are open drawer header Dashboard component are betore bosacha ..sayjano aykana lagva nah use kore open drawer */}
+            <div className="drawer-content flex flex-col  ">
 
                 <USERDashboardHeader></USERDashboardHeader>
-
-                {/* <label htmlFor="my-drawer-2" className="btn w-[60px] md:hidden"><i class="fa text-black text-2xl fa-bars" aria-hidden="true"></i></label> */}
-
                 {/* ===================================== */}
-
                 <Outlet></Outlet>
                 {/* Page content here */}
 
             </div>
 
-          
-               
-            <div className="drawer-side fixed">
+
+
+            <div className="drawer-side  z-[999]">
                 <label htmlFor="my-drawer-2" className=" drawer-overlay"></label>
 
                 <ul className="menuParent menu px-6 pt-[28px] w-90 h-[100%] text-base-content">
-                
-                    <div className='NameInformation mb-[14px]'>
 
-                        <div className="img ">
-                            <img className="w-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?auto=format&amp;fit=crop&amp;q=80&amp;w=1480&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" />
-                        </div>
+                    <div className='Information mb-[20px]'>
 
-                        <h3 className="text-[18px] font-[700] text-black text-center pt-[14px] leading-[26px]">
-                            This is User
-                        </h3>
-
+                        <Link to="/">
+                            <div className='Img flex items-center'>
+                                <img src={Logo} alt="image logo" />
+                                <h4 className="text-[20px] font-[400] pl-[4px]">MoneyFly</h4>
+                            </div>
+                        </Link>
 
                     </div>
 
@@ -59,16 +49,16 @@ const USERDashboard = () => {
 
                     <div className='RouteAllParent'>
 
-                        <li className='Dashboard'> <Link to="/"> Home</Link></li>
-                        <li> <Link to="/DashboardUser/OverviewPlan"><span><FaWallet></FaWallet></span>Overview Plan</Link></li>
-                        <li> <Link to="/DashboardUser/Reacharge"><span><FaWallet></FaWallet></span>Recharge Money</Link></li>
-                        <li> <Link to="/DashboardUser/Profile"><span><FaWallet></FaWallet></span>Profile</Link></li>
-                        <li> <Link to="/DashboardUser/DailyClime"><span><FaWallet></FaWallet></span>Plan Clime</Link></li>
-                        <li> <Link to="/DashboardUser/FreeClimeDaily"><span><FaWallet></FaWallet></span>Free Clime</Link></li>
-                        <li> <Link to="/DashboardUser/MyReferall"><span><FaWallet></FaWallet></span>My Refer</Link></li>
-                        <li> <Link to="/DashboardUser/InviteFriends"><span><FaWallet></FaWallet></span>Invite Friends</Link></li>
-                        <li> <Link to="/DashboardUser/TaskClime"><span><FaWallet></FaWallet></span>Ny Task Dollar</Link></li>
-                        <li> <Link to="/DashboardUser/Withdraw"><span><FaWallet></FaWallet></span>Withdraw Money</Link></li>
+                        <li className='Dashboard'> <NavLink to="/DashboardUser/UserAccount"><span><i className="fa fa-tachometer" aria-hidden="true"></i></span>  My Dashboard</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/OverviewPlan"><span><i className="fa fa-circle-o-notch" aria-hidden="true"></i></span>Overview Plan</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/Reacharge"><span><i className="fa fa-credit-card" aria-hidden="true"></i></span>Recharge Money</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/Profile"><span><i className="fa fa-user-circle-o" aria-hidden="true"></i></span>Profile</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/DailyClime"><span><i className="fa fa-usd" aria-hidden="true"></i></span>Plan Clime</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/FreeClimeDaily"><span><i className="fa fa-gift" aria-hidden="true"></i></span>Free Clime</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/MyReferall"><span><i className="fa fa-gg" aria-hidden="true"></i></span>My Refer</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/InviteFriends"><span><i className="fa fa-share-square-o" aria-hidden="true"></i></span>Invite Friends</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/TaskClime"><span><i className="fa fa-tasks" aria-hidden="true"></i></span>My Singup Dollar</NavLink></li>
+                        <li> <NavLink to="/DashboardUser/Withdraw"><span><i className="fa fa-money" aria-hidden="true"></i></span>Withdraw Money</NavLink></li>
 
                     </ div>
 

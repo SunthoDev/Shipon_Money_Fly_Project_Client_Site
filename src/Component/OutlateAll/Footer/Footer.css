@@ -1,15 +1,8 @@
 .ParentFooter {
-
-    /* background-image: url(../../../assets/Footer/footer.png); */
-    /* background-color: #38B6FF; */
-    /* background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    background-color: #393f43;
+    background-color: #163351;
 }
 
 .ParentFooter .SocialIcon {
-
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -19,7 +12,6 @@
     font-size: 22px;
     color: white;
     transition: .2s;
-
 }
 
 .ParentFooter .SocialIcon:hover {

@@ -23,6 +23,7 @@ import OverviewAllPlan from '../../USERDashboardAll/USERDashboardWorkAll/Overvie
 import MyTaskAll from '../../USERDashboardAll/USERDashboardWorkAll/MyTaskAll/MyTaskAll';
 import MyReferAll from '../../USERDashboardAll/USERDashboardWorkAll/MyReferAll/MyReferAll';
 import ConfirmePayment from '../../USERDashboardAll/USERDashboardWorkAll/PaymentAllSystem/ConfirmePayment/ConfirmePayment';
+import UserAccount from '../../USERDashboardAll/UserAccount/UserAccount';
 
 
 let route = createBrowserRouter([
@@ -63,6 +64,10 @@ let route = createBrowserRouter([
         element : <PrivateRoute><USERDashboard></USERDashboard></PrivateRoute>,
         children : [
 
+            {
+                path:"UserAccount",
+                element: <UserAccount></UserAccount>
+            },
             {
                 path:"OverviewPlan",
                 element: <OverviewAllPlan></OverviewAllPlan>

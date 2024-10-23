@@ -1,17 +1,25 @@
 import React from 'react';
 import "./Banner.css"
 import { useState } from 'react';
-import One from "../../../assets/SubImageAll/12.png"
-import Two from "../../../assets/SubImageAll/12.png"
+import one from "../../../assets/Banner/one.png"
+import two from "../../../assets/Banner/two.png"
+import three from "../../../assets/Banner/three.png"
+import four from "../../../assets/Banner/four.png"
+import five from "../../../assets/Banner/five.png"
+import six from "../../../assets/Banner/six.png"
 
 // =====================================================
-// Import Swiper styles
+// Import Swiper styles Start
+// =====================================================
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import 'swiper/css/effect-fade';
+// =====================================================
+// Import Swiper styles End
+// =====================================================
 
 const Banner = () => {
   return (
@@ -114,7 +122,6 @@ const Banner = () => {
 
 
           <div className='Right'>
-
             <div className='SliderParent'>
 
               <div className="slider">
@@ -135,13 +142,33 @@ const Banner = () => {
                   className="mySwiper"
                 >
                   <SwiperSlide>
-                    <div className="w-[100%] h-[360px]">
-                      <img className="w-[100%] h-[340px] md:h-[584px]" src={One} alt="img" />
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={one} alt="img" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <div className="w-[100%] h-[360px]">
-                      <img className="w-[100%] h-[340px] md:h-[584px]" src={Two} alt="img" />
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={two} alt="img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={three} alt="img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={four} alt="img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={five} alt="img" />
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="w-[100%]">
+                      <img className="w-[100%] " src={six} alt="img" />
                     </div>
                   </SwiperSlide>
 
@@ -149,7 +176,6 @@ const Banner = () => {
               </div>
 
             </div>
-
           </div>
 
 

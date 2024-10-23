@@ -1,6 +1,6 @@
 import React from 'react';
 import "./USERDashboardHeader.css"
-import logo from "../../../assets/AllImage/logo.png"
+import logo from "../../../assets/logo/dashboardLogo.png"
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthoncationAll/AuthProvider/AuthProvider';
@@ -21,23 +21,23 @@ const USERDashboardHeader = () => {
 
 
     return (
-        <div className="DashboardNavbar navbar bg-base-100 sticky top-0  w-[100%] ">
+        <div className="DashboardNavbar navbar z-50 fixed md:sticky top-0 w-[100%] ">
             {/* ================================== */}
             <div className="flex-1">
 
                 {/* Dashboard sidebar open drawer */}
 
-                <label htmlFor="my-drawer-2" className="btn w-[60px] md:hidden"><i class="fa text-black text-2xl fa-bars" aria-hidden="true"></i></label>
-                <div className="w-[6%]">
-                    <img className='w-[100%]' src={logo} alt="img" />
+                <label htmlFor="my-drawer-2" className="btn w-[60px] md:hidden"><i className="fa text-black text-2xl fa-bars" aria-hidden="true"></i></label>
+
+                <div className="">
+                    <Link to="/">
+                    {/* <img className='w-[100%]' src={logo} alt="img" /> */}
+                    </Link>
                 </div>
 
 
                 <div className="hidden md:block">
                     <div className="flex gap-4 ml-0 md:ml-[64px] ">
-                        {/* <h3 className='text-[16px] font-[600] text-black'>Pick & Drop</h3>
-                        <h3 className='text-[16px] font-[600] text-black'>SMS</h3>
-                        <h3 className='text-[16px] font-[600] text-black'>Monitoring</h3> */}
                     </div>
                 </div>
             </div>
@@ -45,7 +45,6 @@ const USERDashboardHeader = () => {
             {/* ================================== */}
             <div className="flex-none gap-2">
                 <div className="form-control">
-                    {/* <i className="fa text-[26px] font-[600] mr-[10px] fa-comments-o" aria-hidden="true"></i> */}
                 </div>
 
                 <div className="dropdown dropdown-end">

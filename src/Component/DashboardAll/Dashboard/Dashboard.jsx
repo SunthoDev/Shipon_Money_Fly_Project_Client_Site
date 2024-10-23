@@ -34,7 +34,7 @@ const Dashboard = () => {
 
           
                
-            <div className="drawer-side fixed">
+            <div className="drawer-side z-[999]">
                 <label htmlFor="my-drawer-2" className=" drawer-overlay"></label>
 
                 <ul className="menuParent menu px-6 pt-[28px] w-90 h-[100%] text-base-content">
@@ -56,7 +56,7 @@ const Dashboard = () => {
 
                     {/* admin panel  */}
 
-                    <>
+                    <div className='RouteAllParent'>
                         <li className='Dashboard'> <Link to="/"> Home</Link></li>
                         <li> <NavLink to="/dashboardAdminShipon/AdminUser"><span><FaWallet></FaWallet></span>All User</NavLink></li>
                         <li> <NavLink to="/dashboardAdminShipon/UserAllRechargeData"><span><FaWallet></FaWallet></span>User All Recharge </NavLink></li>
@@ -64,7 +64,7 @@ const Dashboard = () => {
                         <li> <NavLink to="/dashboardAdminShipon/UserAllWithdrawData"><span><FaWallet></FaWallet></span>User All Withdraw Data</NavLink></li>
                         <li> <NavLink to="/dashboardAdminShipon/UpdatePaymentInfoAdmin"><span><FaWallet></FaWallet></span>Update Payment Info</NavLink></li>
 
-                    </>
+                    </div>
 
                 </ul>
 

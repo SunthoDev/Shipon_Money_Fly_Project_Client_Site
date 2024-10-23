@@ -1,41 +1,80 @@
-
 .SingUpParent {
-    background-image: url("../../../assets/AllImage/Login.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    /* height: 100vh; */
+    background-color: #F0F9FF;
 }
-.SingUpParent .SingUp {
-    background-color: rgb(255,255,255,.1);
-    backdrop-filter: blur(50px);
-    border: 2px solid rgb(255,255,255,.2);
-    box-shadow: 0 0 10px rgb(0,0,0,.2);
-}
-.SingUpParent .SingUp .MaineCard{
 
+.SingUpParent .SingUp {}
+
+
+
+/* ======================= */
+/* Left side css all */
+/* ======================= */
+
+.SingUpParent .SingUp .MaineCard .Left {}
+
+.SingUpParent .SingUp .MaineCard .Left h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 14px;
 }
+
 .SingUpParent .SingUp .MaineCard .Left {
-    /* background-image: url(/src/assets/SingUp/Banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -128px center; */
-    background-color: white;
+    padding: 54px 8px;
 }
-.SingUpParent .SingUp .MaineCard .Left .img {
-    width: 100%;
-    /* padding: 0px 84px; */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.SingUpParent .SingUp .MaineCard .Right{
 
+.SingUpParent .SingUp .MaineCard .Left .SliderParent .slider  .SliderItem h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding: 18px 0;
 }
-.SingUpParent .SingUp .MaineCard .Right .FromData {
 
+.SingUpParent .SingUp .MaineCard .Left .SliderParent .slider .SliderItem p {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 50px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================================== */
+/* Right all css Start  */
+/* ===================================== */
+.SingUpParent .SingUp .MaineCard .Right {
+    background-color: #F9FBFD;
+    background-color: rgb(255, 255, 255, .1);
+    backdrop-filter: blur(50px);
+    border: 2px solid rgb(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgb(0, 0, 0, .2);
+}
+
+.SingUpParent .SingUp .MaineCard .Right h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 18px;
+    text-align: center;
+    background-color: #0171D3;
+    color: white;
+}
+
+.SingUpParent .SingUp .MaineCard .Right .FromData {}
+
 .SingUpParent .SingUp .MaineCard .Right .FromData input {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -52,7 +91,7 @@
 
 .SingUpParent .BackHome {
     position: absolute;
-    color: black; 
+    color: black;
     width: 82px;
     height: 35px;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
@@ -66,8 +105,3 @@
     z-index: 999;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
-
-
-

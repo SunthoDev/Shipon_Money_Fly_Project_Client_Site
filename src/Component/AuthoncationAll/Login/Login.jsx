@@ -8,6 +8,10 @@ import useRole from "../../../Hook/useRole";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
+import enjoy from "../../../assets/LoginImage/enjoy_boost.png"
+import bonus from "../../../assets/LoginImage/get_bonus.png"
+import win from "../../../assets/LoginImage/win_daily.png"
+
 const Login = () => {
 
     let [poup, setPoup] = useState(false)
@@ -82,17 +86,52 @@ const Login = () => {
 
     return (
 
-        <div className='LoginParent pt-[134px] '>
+        <div className='LoginParent'>
 
             <ToastContainer />
 
-            <div className='LogIn w-[100%] lg:w-[440px] mx-auto rounded-[4px]'>
+            {/* <div className='LogIn w-[100%] lg:w-[440px] mx-auto rounded-[4px]'> */}
+            <div className='LogIn '>
 
-                <div className='MaineCard'>
+                <div className='MaineCard grid md:grid-cols-12 gap-6'>
 
-                    <div className="Right">
+                    <div className='Left hidden md:block  md:col-span-4 text-black bg-white'>
+                        <h2>How to boost your earnings?</h2>
+                        <div className="Prefer flex items-center">
+                            <div className="Img w-[38%]">
+                                <img className="w-[100%] h-[100%]" src={enjoy} alt="img" />
+                            </div>
+                            <div className="">
+                                <h4>Get a 25% bonus</h4>
+                                <p>Invite your friends and get a bonus for their activity</p>
+                            </div>
 
-                        <h2 className='text-[27px] font-[500] text-black pt-[28px] text-center'>LOGIN</h2>
+                        </div>
+                        <div className="Prefer flex items-center">
+                            <div className="Img w-[38%]">
+                                <img className="w-[100%] h-[100%]" src={bonus} alt="img" />
+                            </div>
+                            <div className="">
+                                <h4>Win up to $100 daily</h4>
+                                <p>Open the Lucky Pot every day to win credit rewards</p>
+                            </div>
+
+                        </div>
+                        <div className="Prefer flex items-center">
+                            <div className="Img w-[38%]">
+                                <img className="w-[100%] h-[100%]" src={win} alt="img" />
+                            </div>
+                            <div className="">
+                                <h4>Enjoy a 10% boost</h4>
+                                <p>Enable the JumpTask mode to get bonus credits effortlessly</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div className="Right my-20 md:col-span-8 w-[100%] lg:w-[440px] mx-auto rounded-[4px]">
+
+                        <h2 className=''>Hey, welcome back!</h2>
 
                         <form onSubmit={handleSubmit(onSubmit)} className='FromData px-3 md:px-[20px]' >
 
@@ -122,17 +161,17 @@ const Login = () => {
 
 
                             {/* ======================== */}
-                            <button className='Register mt-[4px] w-[100%] bg-[#22afa3] py-[10px] rounded-[7px] text-white text-[18px] font-[600]' type="submit">LOGIN </button>
-                            {/* <ToastContainer /> */}
+                            <button className='Register mt-[4px] w-[100%] bg-[#0171D3] py-[10px] rounded-[7px] text-white text-[18px] font-[600]' type="submit">LOGIN </button>
 
                             {/* ========================= */}
-                            <h3 className="mt-[23px] mb-[18px] text-[14px] font-[400] text-white ">Don’t have an account? <Link className='text-[#f93333] text-[15px] font-[500] ' to="/singUp/0000">Register</Link></h3>
+                            <h3 className="mt-[23px] mb-[18px] text-[14px] font-[400] text-[#22afa3] ">Don’t have an account? <Link className='text-[#f93333] text-[15px] font-[500] ' to="/singUp/0000">Register</Link></h3>
 
                         </form>
 
                     </div>
-                    
+
                 </div>
+
             </div>
 
 

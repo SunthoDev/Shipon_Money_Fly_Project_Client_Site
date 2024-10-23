@@ -1,0 +1,41 @@
+.UserAccountParent {}
+
+.UserAccountParent .UserAccount {}
+
+.UserAccountParent .UserAccount .BalanceInformationParent {}
+
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo {
+    height: 200px;
+    border-radius: 8px;
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(1) {
+    background: linear-gradient(135deg, rgb(251, 192, 45) 0%, rgb(245, 127, 23) 100%);
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(2) {
+    background: linear-gradient(135deg, rgb(25, 118, 210) 0%, rgb(13, 71, 161) 100%);
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(3) {
+    background: linear-gradient(135deg, #f3ba2e 0%, #f3ba2e 100%);
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(4) {
+    background: linear-gradient(135deg, #cd73e6 0%, #b649d5 100%);
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(5) {
+    background: linear-gradient(135deg, #415f9f 0%, #0d1e30 100%);
+}
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo:nth-child(6) {
+    background: linear-gradient(135deg, rgb(211, 47, 47) 0%, rgb(183, 28, 28) 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.UserAccountParent .UserAccount .BalanceInformationParent .BalanceInfo h2 {}

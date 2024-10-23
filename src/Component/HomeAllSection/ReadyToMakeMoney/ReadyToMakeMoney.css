@@ -1,0 +1,40 @@
+.ReadyToMakeMoneyParent {}
+
+.ReadyToMakeMoneyParent h2 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: rgb(35, 40, 54);
+    text-align: center;
+    margin-top: 48px;
+}
+
+.ReadyToMakeMoneyParent h3 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(35, 40, 54);
+    text-align: center;
+    padding-top: 14px;
+    padding-bottom: 34px;
+}
+
+.ReadyToMakeMoneyParent h4 {
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(1, 113, 211);
+    border: 1px solid rgb(1, 113, 211);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 6px 12px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.ReadyToMakeMoneyParent h4:hover {
+    border: 1px solid rgb(1, 113, 211);
+    background-color: transparent;
+    color: black;
+}

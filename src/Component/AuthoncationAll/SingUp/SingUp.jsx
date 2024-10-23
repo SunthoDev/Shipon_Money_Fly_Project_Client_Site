@@ -11,6 +11,20 @@ import moment from 'moment';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
+import One from "../../../assets//Singup/welcome_slider_1.svg"
+import Two from "../../../assets/Singup/welcome_slider_2.svg"
+import Three from "../../../assets/Singup/welcome_slider_3.svg"
+// =====================================================
+// Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
+import 'swiper/css/effect-fade';
+
+
+
 
 const SingUp = () => {
 
@@ -30,7 +44,7 @@ const SingUp = () => {
 
 
 
-    // ===================================================================
+    // ================================================
 
     let [xx, setXx] = useState(true)
     let [btnDisable, setBtnDisable] = useState(false)
@@ -46,8 +60,6 @@ const SingUp = () => {
     let DataRef = useParams()
     let UserReferUseAccount = DataRef.id
     // console.log(UserReferUseAccount)
-
-
 
     // ========================================
     // User Save Database 
@@ -125,7 +137,7 @@ const SingUp = () => {
                     console.log(error)
                     setError(error.message)
                 })
-        }else{
+        } else {
             Swal.fire({
                 position: "top-end",
                 icon: "success",
@@ -137,17 +149,68 @@ const SingUp = () => {
     }
 
 
-
     return (
-        <div className='SingUpParent pt-[58px] pb-[28px]'>
+        <div className='SingUpParent'>
             <ToastContainer />
 
-            <div className='SingUp w-[100%] lg:w-[440px] mx-auto rounded-[4px] bg-white'>
+            {/* <div className='SingUp w-[100%] lg:w-[440px] mx-auto rounded-[4px] bg-white'> */}
+            <div className='SingUp'>
 
-                <div className='MaineCard'>
-                    <div className="Right col-span-4">
+                <div className='MaineCard grid md:grid-cols-12 gap-6'>
 
-                        <h2 className='text-[27px] font-[500] text-black pt-[28px] text-center'>SINGUP</h2>
+                    <div className='Left hidden md:block  md:col-span-4 text-black bg-white'>
+                        <h2>How to boost your earnings?</h2>
+
+                        <div className='SliderParent'>
+
+                            <div className="slider">
+                                <Swiper
+                                    spaceBetween={30}
+                                    centeredSlides={true}
+                                    autoplay={{
+                                        delay: 2000,
+                                        disableOnInteraction: false,
+                                    }}
+                                    // dotte true click 
+                                    pagination={{
+                                        clickable: true,
+                                    }}
+                                    // sidebar click
+                                    // navigation={true}
+                                    modules={[Autoplay, Pagination, Navigation]}
+                                    className="mySwiper"
+                                >
+                                    <SwiperSlide>
+                                        <div className="SliderItem w-[100%]">
+                                            <img className="w-[100%] " src={One} alt="img" />
+                                            <h3>Earn passive income with a few clicks</h3>
+                                            <p>  You're so close to earning money! Install Honeygain and let your devices do all the work.</p>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="w-[100%] SliderItem">
+                                            <img className="w-[100%] " src={Two} alt="img" />
+                                            <h3>Discover many ways to earn more</h3>
+                                            <p>Install Honeygain on up to 10 devices, refer friends to get bonus credits, and try Content Delivery feature!</p>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide>
+                                        <div className="w-[100%] SliderItem">
+                                            <img className="w-[100%]  " src={Three} alt="img" />
+                                            <h3>Ensuring your security in every step</h3>
+                                            <p>Your security is our top priority! On top of various security measures, you're in full control of your data usage too.</p>
+                                        </div>
+                                    </SwiperSlide>
+
+                                </Swiper>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="Right my-20 md:col-span-8 w-[100%] lg:w-[440px] mx-auto rounded-[4px]">
+
+                        <h2 className='text-[27px] font-[500] text-black pt-[28px] text-center'>Create an account Singup</h2>
 
                         <form onSubmit={handleSubmit(onSubmit)} className='FromData px-3 md:px-[20px]' >
 
@@ -207,14 +270,15 @@ const SingUp = () => {
 
 
                             {/* ======================== */}
-                            <button disabled={btnDisable} className='Register mt-[4px] w-[100%] bg-[#22afa3] py-[10px] rounded-[7px] text-white text-[18px] font-[600]' type="submit">Register Now</button>
+                            <button disabled={btnDisable} className='Register mt-[4px] w-[100%] bg-[#0171D3] py-[10px] rounded-[7px] text-white text-[18px] font-[600]' type="submit">Register Now</button>
 
                             {/* ========================= */}
-                            <h3 className="mt-[23px] mb-[18px] text-[14px] font-[400] text-white ">Already have an account? <Link className='text-[#f93333] text-[15px] font-[500] ' to="/login">Login</Link></h3>
+                            <h3 className="mt-[23px] mb-[18px] text-[14px] font-[400] text-[#22afa3] ">Already have an account? <Link className='text-[#f93333] text-[15px] font-[500] ' to="/login">Login</Link></h3>
 
                         </form>
 
                     </div>
+
                 </div>
 
             </div>

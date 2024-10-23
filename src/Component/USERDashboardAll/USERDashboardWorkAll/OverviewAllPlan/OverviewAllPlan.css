@@ -1,50 +1,69 @@
-
 /* -------------------------------- */
 /* Left subscription Data All start */
 /* -------------------------------- */
 
- .SubscriptionParent .Subscription {
-}
+.SubscriptionParent .Subscription {}
 
- .SubscriptionParent .Subscription .Subscription {
-    background-color: white;
-    padding: 16px 12px;
+.SubscriptionParent .Subscription .SubscriptionItems {
+    background-color: #ffffff;
     border-radius: 8px;
     margin-top: 14px;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
- .SubscriptionParent .Subscription .Subscription .Img {
+.SubscriptionParent .Subscription .SubscriptionItems .Img {
     width: 100%;
     margin-bottom: 8px;
 }
 
- .SubscriptionParent .Subscription .Subscription h3 {
-    color: black;
-    font-size: 18px;
-    font-weight: 500;
-    font-weight: 700;
-    text-align: center;
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub {
+    padding: 16px 12px;
 }
 
- .SubscriptionParent .Subscription .Subscription h4 {
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 4px;
+
+
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BodyDetails {
+    margin-top: 10px;
 }
 
- .SubscriptionParent .Subscription .Subscription button {
-     background-color: #3CCC70;
-     width: 100%;
-     margin-top: 18px;
-     color: white;
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BodyDetails .first {}
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BodyDetails .first h1 {
+    border: 1px solid #0b82e3;
+    border-radius: 8px;
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    line-height: 32px;
+}
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BodyDetails .first h2 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+}
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BodyDetails .second h3 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+}
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BuyButton {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    width: 100%;
+    margin-top: 18px;
+    color: white;
     font-size: 16px;
     padding: 8px 12px;
     border-radius: 6px;
+    background-color: rgb(253, 217, 75);
+    color: rgb(35, 40, 54);
+    font-weight: 500;
+    transition: .4s;
 }
+
+.SubscriptionParent .Subscription .SubscriptionItems .BodySub .BuyButton:hover {
+    background-color: #EA9F00;
+}
+
+
 
 /* -------------------------------- */
 /* Left subscription Data All */
@@ -55,25 +74,144 @@
 /* -------------------------------- */
 
 .SubscriptionParent .RightOffer {
-    margin-top: 24px;
-    position: -webkit-sticky; 
+    /* margin-top: 24px;
+    position: -webkit-sticky; */
 }
 
-.SubscriptionParent .RightOffer .RefFd{
+.SubscriptionParent .RightOffer .RefFd {
     position: sticky;
-    top: 80px; 
+    top: 80px;
+    top: -14px;
+    z-index: 40;
     background-color: white;
-    padding: 14px;
-    border-radius: 7px;
-    
+    border-radius: 8px;
+    /* padding-bottom: 8px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-.SubscriptionParent .RightOffer .RefFd p{
-    color: black;
-    font-family: sans-serif;
-    font-weight: 600;
+
+.SubscriptionParent .RightOffer .RefFd .Head {
+    background: linear-gradient(180deg, #006092 0%, #002E73 100%);
+    /* box-shadow: 0px 15px 16px rgba(0, 21, 52, 0.61); */
+    padding: 14px 14px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.SubscriptionParent .RightOffer .RefFd h2 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(249, 251, 253);
+    text-align: left;
+}
+
+.SubscriptionParent .RightOffer .RefFd .InviteNow {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    background-color: rgb(253, 217, 75);
+    color: rgb(35, 40, 54);
     font-size: 14px;
-    text-align: justify;
+    font-weight: 500;
+    padding: 4px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
+    transition: .4s;
 }
+
+.SubscriptionParent .RightOffer .RefFd .InviteNow:hover {
+    background-color: #EA9F00;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body {
+
+    padding: 18px 16px;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body .img {
+    /* width: 64%; */
+    height: 100%;
+    margin: 0 auto;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body h3 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(35, 40, 54);
+    text-align: center;
+    padding-top: 24px;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body p {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(35, 40, 54);
+    text-align: justify;
+    padding-top: 18px;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body h5 {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 14px;
+    padding-bottom: 4px;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body .Copy {}
+
+.SubscriptionParent .RightOffer .RefFd .Body .Copy a {
+    font-family: Manrope, -apple-system, "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+    color: black;
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+    line-height: 28px;
+    padding: 0 8px;
+    border-radius: 6px;
+    background: #F4F9FF;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body .Copy .CopyButton {
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(1, 113, 211);
+    border: 1px solid rgb(1, 113, 211);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+    font-size: 14px;
+    height: 30px;
+    /* width: 160px; */
+    line-height: 26px;
+}
+
+.SubscriptionParent .RightOffer .RefFd .Body .Copy .CopyButton:hover {
+    background-color: transparent;
+    border: 1px solid rgb(1, 113, 211);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -83,13 +221,3 @@
 /* -------------------------------- */
 /* Right Offer End*/
 /* -------------------------------- */
-
-
-
-
-
-
-
-
-
-

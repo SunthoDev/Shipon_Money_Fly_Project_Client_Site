@@ -1,6 +1,6 @@
 import React from 'react';
 import "./DashboardHeader.css"
-import logo from "../../../assets/AllImage/logo.png"
+import logo from "../../../assets/logo/logoOne.png"
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../AuthoncationAll/AuthProvider/AuthProvider';
@@ -20,7 +20,7 @@ const DashboardHeader = () => {
     }
 
     return (
-        <div className="DashboardNavbar navbar bg-base-100">
+        <div className="DashboardNavbar navbar bg-base-100 z-50 fixed md:sticky top-0 w-[100%]">
             {/* ================================== */}
             <div className="flex-1">
 
